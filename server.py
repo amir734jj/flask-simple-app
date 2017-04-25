@@ -77,5 +77,5 @@ def logout():
 
 if __name__ == "__main__":
     app.config["TEMPLATES_AUTO_RELOAD"] = True
-    app.secret_key = "secret is her!"
+    app.secret_key = "secret is here!"
     app.run(debug=True, host="0.0.0.0")
