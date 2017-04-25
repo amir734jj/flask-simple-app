@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+
+{% block body %}
+	{% if user is defined %}
+		<h2>Hello {{user.firstname}}</h2>
+	{% else %}
+		<h3>Please register or login!<h3>
+	{% endif %}
+{% endblock %}

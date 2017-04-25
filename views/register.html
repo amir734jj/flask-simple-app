@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<h2>Register</h2>
+<form class="form" action="/register" method="post">
+	<div class="form-group">
+		<label class="sr-only" for="firstname">Firstname</label>
+		<input type="text" class="form-control" id="firstname" name="firstname" placeholder="Enter firstname">
+	</div>
+	<div class="form-group">
+		<label class="sr-only" for="lastname">Lastname</label>
+		<input type="text" class="form-control" id="lastname" name="lastname" placeholder="Enter lastname">
+	</div>
+	<div class="form-group">
+		<label class="sr-only" for="email">Email:</label>
+		<input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
+	</div>
+	<div class="form-group">
+		<label class="sr-only" for="pwd">Password:</label>
+		<input type="password" class="form-control" id="pwd" name="password" placeholder="Enter password">
+	</div>
+	<button type="submit" class="btn btn-default">Register</button>
+</form>
+{% endblock %}
